@@ -1,4 +1,4 @@
-let character = getFromLocalStorage() || {
+let character = {
   personalData: {
     name: '',
     age: null,
@@ -36,7 +36,7 @@ let character = getFromLocalStorage() || {
 };
 
 function setPersonalData(data) {
-  object.assign(character.personalData, data)
+  Object.assign(character.personalData, data);
   saveToLocalStorage();
 }
 
@@ -47,6 +47,11 @@ function saveToLocalStorage() {
 function getFromLocalStorage() {
   // TODO update the input elements so that page starts with the right values
   return JSON.parse(localStorage.getItem('character'));
+}
+
+function loadCharacter() {
+  character = getFromLocalStorage();
+  document.getElementById('name').value = character.personalData.name;
 }
 
 

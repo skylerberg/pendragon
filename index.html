@@ -5,6 +5,7 @@
     <script src="character.js"></script>
     <h1>Pendragon Character Sheet</h1>
     <button onclick="loadCharacter()">Load Character</button>
+
     <h2>Character Information</h2>
     <label>Name: </label><input id="name" type="text" placeholder="Arthur" oninput="setPersonalData({ name: event.target.value })"/>
     <br>
@@ -20,7 +21,173 @@
         <option value="breton">Breton</option>
         <option value="roman">Roman</option>
         <option value="pict">Pictish</option>
+        <option value="acquitainiain">Acquitainiain</option>
         <option value="greek">Greek</option>
       </select>
+    <br>
+    <label for="religion_dropdown">Religion:</label>
+      <select id="religion_dropdown" name="religion_dropdown">
+        <option value="british_christianity">British Christianity</option>
+        <option value="british_paganism">British Paganism</option>
+        <option value="roman_christianity">Roman Christianity</option>
+        <option value="arian_christianity">Arian Christianity</option>
+        <option value="germanic_paganism">Germanic Paganism</option>
+        <option value="germanic_paganism">Roman Polytheism</option>
+        <option value="heathenism">Heathenism</option>
+      </select>
+    <br>
+    <label>Current Lord: </label><input type="text" placeholder="Earl Roderick" />
+    <br>
+    <label>Current Home: </label><input type="text" placeholder="Sarum" />
+    <br>
+    <label for="class_dropdown">Current Class:</label>
+    <select id="class_dropdown" name="class_dropdown">
+      <option value="squire">Squire</option>
+      <option value="esquire">Esquire/Sergeant</option>
+      <option value="mercenary_knight">Mercenary Knight</option>
+      <option value="household_knight">Household Knight</option>
+      <option value="landed_knight">Landed Knight</option>
+      <option value="banneret_knight">Banneret Knight</option>
+      <option value="lord">Lord</option>
+    </select>
+    <br>
+      
+    <h2>Personality Traits</h2>
+    <label>Chaste </label><input type="number" placeholder="10"/><label> / Lustful </label><input type="number" placeholder="10"/>
+    <br>
+    <label>Energetic </label><input type="number" placeholder="10"/><label> / Lazy </label><input type="number" placeholder="10"/>
+    <br>
+    <label>Forgiving </label><input type="number" placeholder="10"/><label> / Vengeful </label><input type="number" placeholder="10"/>
+    <br>
+    <label>Generous </label><input type="number" placeholder="10"/><label> / Selfish </label><input type="number" placeholder="10"/>
+    <br>
+    <label>Honest </label><input type="number" placeholder="10"/><label> / Deceitful </label><input type="number" placeholder="10"/>
+    <br>
+    <label>Just </label><input type="number" placeholder="10"/><label> / Arbitrary </label><input type="number" placeholder="10"/>
+    <br>
+    <label>Merciful </label><input type="number" placeholder="10"/><label> / Cruel </label><input type="number" placeholder="10"/>
+    <br>
+    <label>Modest </label><input type="number" placeholder="10"/><label> / Proud </label><input type="number" placeholder="10"/>
+    <br>
+    <label>Prudent </label><input type="number" placeholder="10"/><label> / Reckless </label><input type="number" placeholder="10"/>
+    <br>
+    <label>Spiritual </label><input type="number" placeholder="10"/><label> / Worldly </label><input type="number" placeholder="10"/>
+    <br>
+    <label>Temperate </label><input type="number" placeholder="10"/><label> / Indulgent </label><input type="number" placeholder="10"/>
+    <br>
+    <label>Trusting </label><input type="number" placeholder="10"/><label> / Suspicious </label><input type="number" placeholder="10"/>
+    <br>
+    <label>Valorous </label><input type="number" placeholder="10"/><label> / Cowardly </label><input type="number" placeholder="10"/>
+    <br>
+
+    <h2>Passions</h2>
+    <label>Honor </label><input type="number" placeholder="15"/><br>
+    <label>Fealty (Lord) </label><input type="number" placeholder="15"/><br>
+    <label>Love (Family) </label><input type="number" placeholder="15"/><br>
+    <label>Station </label><input type="number" placeholder="5"/><br>
+    <label>Hospitality </label><input type="number" placeholder="10"/><br>
+    <label>Chivalry </label><input type="number" placeholder="10"/><br>
+    <label>Devotion (God) </label><input type="number" placeholder="5"/><br>
+    <label>Adoration (</label><input type="text" placeholder="Love Interest"/><label>)</label><input type="number" placeholder="0"/><br>
+    <label>Hate (</label><input type="text" placeholder="Group"/><label>)</label><input type="number" placeholder="0"/><br>
+
+    <h2>Attributes</h2>
+    <label>SIZ </label><input type="number" placeholder="14"/><br>
+    <label>DEX </label><input type="number" placeholder="12"/><br>
+    <label>STR </label><input type="number" placeholder="14"/><br>
+    <label>CON </label><input type="number" placeholder="15"/><br>
+    <label>APP </label><input type="number" placeholder="15"/><br>
+
+    <h3>Attacks</h3>
+
+    <h3>Health</h3>
+
+    <h3>Other</h3>
+
+    <h2>HP & Wounds</h2>
+
+    <h2>Skills</h2>
+    <h3>Combat Skills</h3>
+    <label>Battle </label><input type="number" placeholder="0"/><br>
+    <label>Bow </label><input type="number" placeholder="0"/><br>
+    <label>Brawling </label><input type="number" placeholder="0"/><br>
+    <label>Mounted Charge </label><input type="number" placeholder="0"/><br>
+    <label>Crossbow </label><input type="number" placeholder="0"/><br>
+    <label>Hafted </label><input type="number" placeholder="0"/><br>
+    <label>Two-Handed Hafted </label><input type="number" placeholder="0"/><br>
+    <label>Horsemanship </label><input type="number" placeholder="0"/><br>
+    <label>Spear </label><input type="number" placeholder="0"/><br>
+    <label>Sword </label><input type="number" placeholder="0"/><br>
+    <label>Thrown Weapon </label><input type="number" placeholder="0"/><br>
+
+    <h3>Other Skills</h3>
+    <label>Awareness </label><input type="number" placeholder="0"/><br>
+    <label>Chirurgery </label><input type="number" placeholder="0"/><br>
+    <label>Compose </label><input type="number" placeholder="0"/><br>
+    <label>Courtesy </label><input type="number" placeholder="0"/><br>
+    <label>Dancing </label><input type="number" placeholder="0"/><br>
+    <label>Falconry </label><input type="number" placeholder="0"/><br>
+    <label>Fashion </label><input type="number" placeholder="0"/><br>
+    <label>First Aid </label><input type="number" placeholder="0"/><br>
+    <label>Flirting </label><input type="number" placeholder="0"/><br>
+    <label>Folklore </label><input type="number" placeholder="0"/><br>
+    <label>Gaming </label><input type="number" placeholder="0"/><br>
+    <label>Hunting </label><input type="number" placeholder="0"/><br>
+    <label>Intrigue </label><input type="number" placeholder="0"/><br>
+    <label>Literacy </label><input type="number" placeholder="0"/><br>
+    <label>Orate </label><input type="number" placeholder="0"/><br>
+    <label>Play (Instrument) </label><input type="number" placeholder="0"/><br>
+    <label>Recognize </label><input type="number" placeholder="0"/><br>
+    <label>Religion </label><input type="number" placeholder="0"/><br>
+    <label>Sing </label><input type="number" placeholder="0"/><br>
+    <label>Stewardship </label><input type="number" placeholder="0"/><br>
+
+    <h2>Squire</h2>
+    <label>Squire's Name </label><input type="text" placeholder="Wart"/><br>
+    <label>Age </label><input type="number" placeholder="15"/><br>
+    <label>Skill </label><input type="number" placeholder="15"/><br>
+
+    <h2>Horses</h2>
+    <h3>Primary Warhorse</h3>
+    <select id="horsetype_dropdown" name="horsetype_dropdown">
+      <option value="rouncy">Rouncy</option>
+      <option value="small_charger">Small Charger</option>
+      <option value="charger">Charger</option>
+      <option value="courser">Courser</option>
+      <option value="destrier">Destrier</option>
+    </select><br>
+    <label>Age </label><input type="number" placeholder="3"/><br>
+    <label>Armor </label><input type="number" placeholder="5"/><br>
+    <label>Move </label><input type="number" placeholder="3"/><br>
+    <label>Damage </label><input type="number" placeholder="5"/><br>
+    <label>HP </label><input type="number" placeholder="5"/><br>
+
+    <h3>Other Horses</h3>
+
+    <h2>Glory</h2>
+    <label>Current Glory </label><input type="number" placeholder="0"/><br>
+
+    <h3>Passive Glory</h3>
+    <label>Ideals </label><input type="number" placeholder="0"/><br>
+    <label>Fair Appeal </label><input type="number" placeholder="0"/><br>
+    <label>Significant Traits & Passions </label><input type="number" placeholder="0"/><br>
+    <label>Estate </label><input type="number" placeholder="0"/><br>
+
+    <h2>History & Notable Events</h2>
+    <label>Born </label><input type="number" placeholder="0"/><br>
+    <label>Squired </label><input type="number" placeholder="0"/><br>
+    <label>Knighted </label><input type="number" placeholder="0"/><br>
+    <label>Landed </label><input type="number" placeholder="0"/><br>
+    <label>Sworn to the Round Table </label><input type="number" placeholder="0"/><br>
+    <label>Ennobled </label><input type="number" placeholder="0"/><br>
+    <label>Died </label><input type="number" placeholder="0"/><br>
+
+    <h2>Family</h2>
+    <label>Father's Name </label><input type="text" placeholder="John"/>
+    <label>Father's Glory </label><input type="number" placeholder="0"/><br>
+    <label>Birth Order Number </label><input type="number" placeholder="1"/><br>
+    <label>Family Characteristic </label><input type="text" placeholder="Well-Bred"/><br>
+
+    <h2>Estate & Income</h2>
   </body>
 </html>

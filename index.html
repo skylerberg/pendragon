@@ -4,7 +4,13 @@
   <body>
     <script src="character.js"></script>
     <h1>Pendragon Character Sheet</h1>
-    <button onclick="loadCharacter()">Load Character</button>
+    <button onclick="loadCharacter()">Load From Browser</button>
+    <br>
+    <button onclick="saveToFile()">Save As File</button>
+    <br>
+    <label for="fileImport" class="btn">Import</label>
+    <input type="file" id="fileImport" accept=".json" onchange="handleImport()">
+
     <h2>Character Information</h2>
     <label>Name: </label><input id="name" type="text" placeholder="Arthur" oninput="setPersonalData({ name: event.target.value })"/>
     <br>

@@ -52,6 +52,14 @@ function getFromLocalStorage() {
 function loadCharacter() {
   character = getFromLocalStorage();
   document.getElementById('name').value = character.personalData.name;
+  document.getElementById('age').value = character.personalData.age;
+  //document.getElementById('sonNumber').value = character.personalData.sonNumber;
+  document.getElementById('homeland').value = character.personalData.homeland;
+  document.getElementById('culture_dropdown').value = character.personalData.culture;
+  //document.getElementById('religion').value = character.personalData.religion;
+  //document.getElementById('lord').value = character.personalData.lord;
+  //document.getElementById('currentClass').value = character.personalData.currentClass;
+  //document.getElementById('currentHome').value = character.personalData.currentHome;
 }
 
 

@@ -8,12 +8,12 @@
     <h2>Character Information</h2>
     <label>Name: </label><input id="name" type="text" placeholder="Arthur" oninput="setPersonalData({ name: event.target.value })"/>
     <br>
-    <label>Age: </label><input type="number" placeholder="21" />
+    <label>Age: </label><input id="age" type="number" placeholder="21" oninput="setPersonalData({ age: event.target.value })"/>
     <br>
-    <label>Homeland: </label><input type="text" placeholder="Salisbury" />
+    <label>Homeland: </label><input id="homeland" type="text" placeholder="Salisbury" oninput="setPersonalData({ homeland: event.target.value })"/>
     <br>
     <label for="culture_dropdown">Culture:</label>
-      <select id="culture_dropdown" name="culture_dropdown">
+      <select id="culture_dropdown" name="culture_dropdown" onchange="setPersonalData({ culture: event.target.value})">
         <option value="cymric">Cymric</option>
         <option value="irish">Irish</option>
         <option value="saxon">Saxon</option>

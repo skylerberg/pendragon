@@ -1,0 +1,22 @@
+body {
+  background: #FDF5E6;
+}
+
+button {
+  font-size: 20px;
+}
+
+label {
+  font-size: 20px;
+}
+
+select {
+  font-size: 20px;
+}
+
+input {
+  font-size: 20px;
+  margin: 0.2em;
+  border: none;
+  background: #FFFFE6;
+}
